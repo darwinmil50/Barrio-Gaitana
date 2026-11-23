@@ -1,0 +1,58 @@
+# Entornos virtuales de Python
+.venv/
+venv/
+env/
+ENV/
+
+# Python: bytecode, cachés y cobertura
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Node, compilación y dependencias
+node_modules/
+dist/
+build/
+.vite/
+coverage/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Pruebas de navegador y reportes
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# Archivos privados (se conservan las plantillas example)
+.env
+.env.*
+!.env.example
+
+# Temporales y del sistema operativo
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Repositorios anidados: este proyecto debe ser un único repositorio
+api-gaitan/.git/
+frontend-gaitan/.git/
+
+# Artefactos generados de entrega
+*.zip

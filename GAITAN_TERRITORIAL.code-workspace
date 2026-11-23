@@ -1,0 +1,28 @@
+{
+  "folders": [
+    {
+      "name": "api-gaitan (backend)",
+      "path": "api-gaitan"
+    },
+    {
+      "name": "frontend-gaitan (web)",
+      "path": "frontend-gaitan"
+    }
+  ],
+  "settings": {
+    "files.eol": "\n",
+    "editor.rulers": [100],
+    "files.exclude": {
+      "**/node_modules": true,
+      "**/__pycache__": true,
+      "**/.pytest_cache": true,
+      "**/dist": true,
+      "**/test-results": true,
+      "**/playwright-report": true
+    },
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/dist": true
+    }
+  }
+}

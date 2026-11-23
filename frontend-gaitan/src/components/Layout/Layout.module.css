@@ -1,0 +1,90 @@
+.shell { min-height: 100vh; display: flex; flex-direction: column; }
+
+.skip {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 2000;
+  padding: 0.5rem 0.8rem;
+  background: #fff;
+  color: var(--ink);
+  border: 3px solid var(--ink);
+  border-radius: 8px;
+}
+.skip:focus { left: 0.5rem; top: 0.5rem; }
+
+.header {
+  background: linear-gradient(135deg, #ffe45e 0%, #ffb347 55%, #ff8fa3 100%);
+  border-bottom: 5px solid var(--ink);
+  box-shadow: 0 5px 0 rgba(18, 48, 71, 0.18);
+}
+
+.headerInner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0.8rem 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.7rem 1rem;
+  justify-content: space-between;
+}
+
+.brand { display: flex; align-items: center; gap: 0.7rem; }
+.mark {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border: 3px solid var(--ink);
+  border-radius: 14px;
+  background: #fff;
+  color: var(--accent);
+  font-weight: 800;
+  font-size: 1.1rem;
+  box-shadow: 3px 3px 0 var(--ink);
+  transform: rotate(-5deg);
+}
+.brand h1 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-shadow: 1px 1px 0 #fff;
+}
+.brand p { margin: 0.15rem 0 0; font-size: 0.72rem; font-weight: 700; }
+
+.nav { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.link {
+  padding: 0.35rem 0.7rem;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ink);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 2px 2px 0 var(--ink);
+}
+.link:hover { background: var(--sun); transform: translateY(-1px); }
+.link:focus-visible { outline: 3px solid var(--accent); }
+.current { background: var(--brand-dark); color: #fff; }
+
+.main { flex: 1; max-width: 1440px; width: 100%; margin: 0 auto; padding: 1.2rem; }
+.footer {
+  padding: 0.8rem 1.25rem;
+  border-top: 4px solid var(--ink);
+  color: var(--ink);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-align: center;
+  background: var(--sun);
+}
+
+@media (max-width: 720px) {
+  .headerInner { padding: 0.7rem 0.9rem; }
+  .main { padding: 0.8rem; }
+  .brand p { max-width: 220px; }
+  .nav { gap: 0.3rem; }
+  .link { font-size: 0.75rem; padding: 0.3rem 0.55rem; }
+}

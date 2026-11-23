@@ -1,0 +1,48 @@
+:root {
+  --brand-dark: #123047;
+  --brand-green: #1f7a5c;
+  --accent: #d1495b;
+  --accent-soft: #ff9f1c;
+  --sun: #ffe45e;
+  --ink: #123047;
+  --muted: #4d6573;
+  --border: #123047;
+  --surface: #fffdf5;
+  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Trebuchet MS', cursive;
+  color: var(--ink);
+  background: #fdf6dc;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  min-width: 320px;
+  color: var(--ink);
+  line-height: 1.45;
+  background-color: #fdf6dc;
+  background-image:
+    radial-gradient(circle at 12% 18%, rgba(255, 159, 28, 0.28) 0 4px, transparent 5px),
+    radial-gradient(circle at 82% 26%, rgba(209, 73, 91, 0.22) 0 5px, transparent 6px),
+    radial-gradient(circle at 55% 82%, rgba(31, 122, 92, 0.18) 0 4px, transparent 5px);
+  background-size: 90px 90px, 120px 120px, 140px 140px;
+}
+
+h1, h2, h3, h4 { line-height: 1.2; }
+a { color: #a32d40; font-weight: 700; }
+button, input, select { font-family: inherit; }
+
+.leaflet-container { font-family: 'Trebuchet MS', system-ui, sans-serif; }
+.leaflet-popup-content { margin: 0.6rem 0.8rem; font-size: 0.82rem; line-height: 1.5; }
+.leaflet-control-attribution { font-size: 10px; }
+
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+::selection { background: var(--sun); color: var(--ink); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}

@@ -1,0 +1,84 @@
+.card {
+  padding: 0.85rem;
+  border: 3px solid var(--ink);
+  border-radius: 14px;
+  background: var(--surface);
+  box-shadow: 4px 4px 0 var(--sun);
+}
+
+.stat { border-left: 6px solid var(--accent); }
+.statLabel {
+  margin: 0;
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.statValue {
+  margin: 0;
+  color: var(--brand-dark);
+  font-size: 1.75rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+.statDetail { margin: 0; color: var(--muted); font-size: 0.8rem; font-weight: 700; }
+.name { margin: 0 0 0.35rem; font-size: 0.95rem; font-weight: 800; }
+.meta { margin: 0.15rem 0; color: var(--muted); font-size: 0.8rem; line-height: 1.4; font-weight: 700; }
+.sourceLink { color: #a32d40; overflow-wrap: anywhere; }
+
+.status {
+  padding: 0.8rem 1rem;
+  border: 3px solid var(--ink);
+  border-radius: 14px;
+  background: #e9f7f3;
+  color: var(--ink);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  box-shadow: 3px 3px 0 var(--brand-dark);
+}
+.statusError { border-color: #8f1d2c; background: #ffe1e5; color: #7c2d2d; }
+.statusEmpty { border-color: var(--muted); background: #fff7d6; }
+.statusLoading { border-color: #2b8794; background: #e4f7fb; }
+.note { margin: 0.4rem 0 0; font-size: 0.82rem; font-style: italic; }
+
+.tableWrap { overflow-x: auto; border: 3px solid var(--ink); border-radius: 12px; }
+.table { width: 100%; border-collapse: collapse; font-size: 0.84rem; }
+.table caption {
+  padding: 0.6rem;
+  background: var(--sun);
+  color: var(--ink);
+  font-weight: 800;
+  text-align: left;
+  border-bottom: 3px solid var(--ink);
+}
+.table th, .table td {
+  padding: 0.5rem 0.6rem;
+  border-top: 2px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+.table th { color: var(--accent); font-size: 0.75rem; text-transform: uppercase; }
+.table td { color: var(--ink); font-weight: 700; }
+.emptyRow { color: var(--muted); text-align: center !important; }
+
+.sourceList { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.5rem; }
+.sourceItem {
+  padding: 0.55rem 0.65rem;
+  border: 2px solid var(--ink);
+  border-left: 6px solid var(--accent);
+  border-radius: 10px;
+  background: #fff;
+  font-size: 0.78rem;
+}
+.sourceItem strong { display: block; color: var(--brand-dark); }
+
+.context {
+  margin-top: 0.6rem;
+  padding: 1rem;
+  border: 3px dashed var(--brand-dark);
+  border-radius: 14px;
+  background: #fffdf5;
+}
+.context h3 { margin: 0 0 0.35rem; font-size: 1rem; font-weight: 800; color: var(--accent); }
+.context p { margin: 0.25rem 0; color: var(--muted); font-size: 0.84rem; font-weight: 700; }
