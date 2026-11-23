@@ -8,7 +8,10 @@ class Settings(BaseSettings):
         env_prefix="GAITAN_", env_file=".env", extra="ignore"
     )
 
-    cors_origins: str = "http://localhost:5173,http://127.0.0.1:5173"
+    cors_origins: str = (
+        "http://localhost:5173,http://127.0.0.1:5173,"
+        "https://darwinmil50.github.io"
+    )
     overpass_url: str = "https://overpass-api.de/api/interpreter"
     nominatim_url: str = "https://nominatim.openstreetmap.org/search"
     osm_api_url: str = "https://api.openstreetmap.org/api/0.6/map"

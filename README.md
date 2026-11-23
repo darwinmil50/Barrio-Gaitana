@@ -56,3 +56,6 @@ con explicación porque no existe fuente pública autorizada a ese nivel.
 La interfaz tiene estética de cómic infantil con colores vivos, burbujas y un
 guía animado. La insignia «EN VIVO» sincroniza mapa, criminalidad y datos
 generales cada 20 segundos; también permite pausar o actualizar al instante.
+
+Para publicar la web con GitHub Pages, consulta `docs/GITHUB_PAGES.md`.
+Pages sirve el frontend; la API Python debe desplegarse por separado con HTTPS.
