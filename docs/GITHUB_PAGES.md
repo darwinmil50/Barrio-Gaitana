@@ -39,6 +39,15 @@ En `https://github.com/darwinmil50/Barrio-Gaitana`:
 Cada push a `main` ejecuta `.github/workflows/deploy-pages.yml`, compila el
 frontend con `VITE_API_URL` y publica `dist`.
 
+La carpeta `frontend-gaitan/dist` también queda versionada como copia de la
+versión pública compilada. Para regenerarla localmente:
+
+```bash
+cd frontend-gaitan
+$env:VITE_API_URL="https://barrio-gaitana.onrender.com"
+npm run build
+```
+
 También puedes ir a **Actions → Desplegar frontend en GitHub Pages → Run
 workflow**.
 
